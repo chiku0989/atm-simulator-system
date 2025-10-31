@@ -1,64 +1,56 @@
-ATM Simulation
+# 🏧 ATM Simulation
 
-This is a simple ATM simulation application built using Java Swing for the graphical user interface and MongoDB as the backend database to store account information, balances, and transaction histories.
+This is a simple **ATM Simulation** application built using **Java Swing** for the graphical user interface and **MongoDB** as the backend database.  
+It simulates core ATM functionalities such as user authentication, deposits, withdrawals, and transaction tracking.
 
-Features
+---
 
-User Authentication: Secure login using Card Number and PIN.
+## 🚀 Features
 
-Check Balance: View the current account balance.
+- 🔐 **User Authentication** — Secure login using Card Number and PIN  
+- 💰 **Check Balance** — View the current account balance  
+- 💵 **Cash Deposit** — Deposit money into the account  
+- 🏧 **Cash Withdrawal** — Withdraw cash (validated against available balance)  
+- 🔄 **PIN Change** — Change the account PIN securely  
+- 📜 **Transaction History** — View recent transactions (mini-statement)  
+- 🚪 **Exit** — Logout safely from the application  
 
-Cash Deposit: Deposit money into the account.
+---
 
-Cash Withdrawal: Withdraw money, checking against the current balance.
+## 🛠️ Technologies Used
 
-Pin Change: Ability to change the account PIN.
+| Component | Technology |
+|------------|-------------|
+| **Frontend** | Java Swing |
+| **Backend** | Java |
+| **Database** | MongoDB (via MongoDB Java Driver) |
 
-Transaction History: View a mini-statement of recent transactions.
+---
 
-Exit: Log out of the application.
+## 🗂️ Database Structure
 
-Technologies Used
+**Database Name:** `atmSimulation`
 
-Frontend: Java Swing
+**Collections:**
+- `accounts`
+- `balance`
+- `transactions`
 
-Backend: Java
+---
 
-Database: MongoDB (with the MongoDB Java Driver)
+## ⚙️ Prerequisites
 
-Database Structure
+Before running the project, ensure you have the following installed:
 
-Database Name: atmSimulation
+- ☕ **Java Development Kit (JDK)** 8 or higher  
+- 🧩 **An IDE** (e.g., IntelliJ IDEA, Eclipse, or NetBeans)  
+- 🗄️ **MongoDB Server** (local or cloud e.g., MongoDB Atlas)  
+- 📦 **MongoDB Java Driver** library added to your project  
 
-Collections:
+---
 
-accounts
+## 🧾 How to Run
 
-balance
-
-transactions
-
-Prerequisites
-
-Java Development Kit (JDK) 8 or higher
-
-An IDE (like IntelliJ IDEA, Eclipse, or NetBeans)
-
-MongoDB Server (running locally or on a cloud service like MongoDB Atlas)
-
-MongoDB Java Driver library added to your project.
-
-How to Run
-
-Clone the repository:
-
-git clone https://github.com/chiku0989/atm-simulator-system.git
-
-
-Start MongoDB: Ensure your MongoDB server is running.
-
-Configure Database: Open the project in your IDE and locate the database connection file (e.g., Conn.java). Update the MongoDB connection string if it's not running on the default mongodb://localhost:27017.
-
-Build the Project: Compile all the Java files.
-
-Run the Application: Run the main class (e.g., Login.java or Main.java) to start the application.
+1. **Clone the repository:**
+   ```bash
+   git clone [your-repository-url]
